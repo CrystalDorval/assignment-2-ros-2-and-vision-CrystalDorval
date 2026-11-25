@@ -9,10 +9,10 @@ mp_hands = mp.solutions.hands
 from aisd_msgs.msg import Hand
 
 
-class MinimalSubscriber(Node):
+class Hands(Node):
 
     def __init__(self):
-        super().__init__('minimal_subscriber')
+        super().__init__('hands')
         self.subscription = self.create_subscription(
             Image,
             'video_frames',
